@@ -21,14 +21,14 @@ class Rectangle extends Shape {
   constructor(x1, y1, x2, y2) {
     super();
     this.width = Math.abs(x1 - x2);
-    this.heigh = Math.abs(y1 - y2);
+    this.height = Math.abs(y1 - y2);
   }
 
   getPerimeter() {
-    return 2 * (this.width + this.heigh);
+    return 2 * (this.width + this.height);
   }
   getArea() {
-    return this.width * this.heigh;
+    return this.width * this.height;
   }
 }
 
@@ -42,7 +42,7 @@ class Circle extends Shape {
     return 2 * Math.PI * this.radius;
   }
   getArea() {
-    return Math.Pi * this.radius * this.radius;
+    return Math.PI * this.radius * this.radius;
   }
 }
 
